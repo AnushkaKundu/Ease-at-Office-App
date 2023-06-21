@@ -49,7 +49,7 @@ Make sure your MongoDB server is running and accessible.
 6. Set up the necessary MongoDB connection configurations in the application's backend code. Refer to the backend documentation for more details.
 
 7. Use Node.js to run the backend server:
-node index.js
+```node index.js```
 
 
 
