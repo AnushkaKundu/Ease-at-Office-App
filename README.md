@@ -1,6 +1,5 @@
 
-Ease at Office is a web app that helps professionals access news, quotes, weather, and a todo list in one place.
-
+Ease at Office is a web app that maintains professionals' information at a office.  The app greets the user with a motivational quote, shows the weather, shows the important news headlines, and help him/her maintain a todo list.
 ## Tech Stack
 
 The app uses these technologies:
@@ -19,9 +18,20 @@ The app integrates these APIs for its features:
 3. OpenWeatherMap API: Retrieves weather forecast based on user's location for the homepage.
 4. Bing Search API: Searches for news articles based on user queries and displays them in a list.
 
+## Quotes 
+The quote of the day feature motivates the users.
+Functionalaties: 
+ - read quote aloud
+ - copy quote to clipboard
+ - tweet the quote.
+
+## Weather Feature
+ - Shows current temperature, windspeed, humidity and location. 
+
 ## Todo List Functionality
 
-The Todo List feature lets users create, read, update, and delete their own tasks, which are saved in the MongoDB database. Users can:
+The Todo List feature lets users perform CRUD operations on MongoDB database. 
+Users can:
 
 - Create: Add new tasks by entering details and clicking "Add".
 - Read: See their existing tasks fetched and displayed by the app.
@@ -51,5 +61,12 @@ Make sure your MongoDB server is running and accessible.
 7. Use Node.js to run the backend server:
 ```node index.js```
 
+## License
 
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
+## Contributions
+
+Contributions to this project are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+
+## Made with ❤️ by [Anushka Kundu](https://github.com/AnushkaKundu)
