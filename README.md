@@ -1,5 +1,9 @@
 
 Ease at Office is a web app that maintains professionals' information at a office.  The app greets the user with a motivational quote, shows the weather, shows the important news headlines, and help him/her maintain a todo list.
+
+![Image 1](./screen%20grab/img1.png)
+![Image 2](./screen%20grab/img2.png)
+
 ## Tech Stack
 
 The app uses these technologies:
