@@ -1,0 +1,125 @@
+.navbar {
+    background-color: #000080;
+    color: lightsteelblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: bolder;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+  
+  .navbar-items-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .logout-button {
+    background-color: #000080;
+    color: lightsteelblue;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .hamburger-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: lightsteelblue;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: lightsteelblue;
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger-icon::before {
+    top: -6px;
+  }
+  
+  .hamburger-icon::after {
+    top: 6px;
+  }
+  
+  .open .hamburger-icon {
+    background-color: transparent;
+  }
+  
+  .open .hamburger-icon::before {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .open .hamburger-icon::after {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-items {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #000080;
+      padding: 10px;
+    }
+  
+    .navbar-items.show {
+      display: flex;
+      font-weight: bolder;
+    }
+  
+    .navbar-item {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .hamburger {
+      display: block;
+      position: relative;
+    }
+  
+    .logout-button {
+      display: none;
+    }
+  }
+  

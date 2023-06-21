@@ -1,0 +1,218 @@
+body {
+  background: lightsteelblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.outer {
+  width: 80vw;
+}
+
+.container {
+  padding: 2%;
+  margin: 3em auto;
+  overflow: auto;
+}
+
+.quote {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: lightskyblue;
+  padding: 3em;
+}
+
+header {
+  font-size: xx-large;
+}
+
+.toptext {
+  text-align: center;
+  padding: 4%;
+  font-size: larger;
+}
+
+.quote {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #000080;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.quote header,
+h2 {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: lightsteelblue;
+}
+
+h2 {
+  color: #000080;
+}
+
+.quote .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quote .quote-area {
+  display: flex;
+  align-items: center;
+}
+
+.quote .quote-area .q {
+  margin: 0 10px;
+}
+
+.quote .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quote .buttons .features {
+  display: flex;
+  align-items: center;
+}
+
+.quote .buttons .icon-list {
+  display: flex;
+  list-style: none;
+  margin-right: 10px; /* Adjust this value to add spacing between icons */
+}
+
+.quote .buttons .icon-list li {
+  margin-right: 10px; /* Adjust this value to add spacing between icons */
+}
+
+
+.quote .buttons .circle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: lightsteelblue;
+}
+
+.quote .buttons .circle-icon svg {
+  color: #000080;
+}
+
+.quote .buttons button {
+  padding: 10px 20px;
+  background-color: lightsteelblue;
+  color: #000080;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.q {
+  padding: 5%;
+  font-size: x-large;
+}
+
+.inline-icon {
+  margin-right: 5px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+form input {
+  flex: 1;
+  border: 1px solid #999;
+  border-radius: 3px;
+  font: inherit;
+  padding: 0.5em;
+  outline: none;
+}
+
+form button {
+  background: #000080;
+  color:#fff;
+  font: inherit;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5em 1.5em;
+}
+
+
+button {
+  background: #17f;
+  color: #fff;
+  font: inherit;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5em 1.5em;
+}
+
+button:active {
+  background-color: #05b;
+}
+
+input {
+  border: 1px solid #999;
+  border-radius: 3px;
+  font: inherit;
+  padding: 0.5em;
+  outline: none;
+}
+
+input:focus {
+  outline: auto #17f;
+}
+
+.item {
+  padding: 1em;
+  list-style-type: none;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  background: #fff;
+  box-shadow: 0px 2px 6px 2px #0002;
+}
+
+.item .title {
+  font-size: 100%;
+}
+
+.item .description {
+  margin: 1em 0;
+}
+
+.item .thumbnail {
+  float: right;
+  box-shadow: 0px 1px 1px 1px #0002;
+  border-radius: 12px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.item .meta {
+  font-size: 80%;
+  font-weight: bold;
+  color: #555;
+}
+
+.item .provider-thumbnail {
+  margin-right: 0.5em;
+}
+
+.item .meta > *:not(:last-child) {
+  margin-right: 2em;
+}

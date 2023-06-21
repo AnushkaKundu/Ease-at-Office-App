@@ -1,0 +1,61 @@
+*{box-sizing: border-box}
+.maindiv {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: lightsteelblue;
+    border: solid 10px #000080;
+    border-radius: 20px;
+    color: #000080;
+    align-items: center;
+}
+header {
+    font-size: x-large;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.maindiv hr {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background-color: #000080;
+    border: none;
+}
+.hr {
+    position: relative;
+    margin-bottom: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    font-size: larger;
+  }
+  
+  .big-div {
+    grid-row: span 2;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: xx-large;
+  }
+  
+  .inner-div {
+    /* background-color: lightblue; */
+    padding: 10px;
+  }
+  
+ /* Use a media query to target devices with a max-width of 600px */
+@media (max-width: 600px) {
+    /* Change the grid-template-columns property to one column */
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
