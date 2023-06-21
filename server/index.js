@@ -28,7 +28,14 @@ const userSchema = new mongoose.Schema({
   password: String,
 });
 
-const User = new mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
+
+const todoSchema = new mongoose.Schema({
+  text: String,
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+});
+
+const Todo = mongoose.model("Todo", todoSchema);
 
 // Routes
 app.post("/login", async (req, res) => {
@@ -68,6 +75,41 @@ app.post("/register", async (req, res) => {
   } catch (error) {
     console.error(error);
     res.send({ message: "An error occurred" });
+  }
+});
+
+app.get("/todos", async (req, res) => {
+  try {
+    const todos = await Todo.find({ userId: req.query.userId });
+    res.json({ todos });
+  } catch (error) {
+    console.error("Error fetching todos:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+app.post("/todos", async (req, res) => {
+  const { text, userId } = req.body;
+  try {
+    const newTodo = await Todo.create({ text, userId });
+    res.json({ todo: newTodo });
+  } catch (error) {
+    console.error("Error adding todo:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+app.delete("/todos/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const deletedTodo = await Todo.findByIdAndDelete(id);
+    if (!deletedTodo) {
+      return res.status(404).json({ error: "Todo not found" });
+    }
+    res.json({ message: "Todo deleted successfully" });
+  } catch (error) {
+    console.error("Error deleting todo:", error);
+    res.status(500).json({ error: "Server error" });
   }
 });
 
