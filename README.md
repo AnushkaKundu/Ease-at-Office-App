@@ -35,7 +35,7 @@ The user's todo list is securely stored in the MongoDB database and persists acr
 To set up the app, follow these steps:
 
 1. Clone the repo to your local machine:
-```git clone <repository-url>```
+```git clone https://github.com/AnushkaKundu/Ease-at-Office-App.git```
 2. Navigate to the project directory:
 ```cd ease-at-office-app```
 3. Install the required dependencies using npm:
@@ -50,11 +50,6 @@ Make sure your MongoDB server is running and accessible.
 
 7. Use Node.js to run the backend server:
 node index.js
-/*
-  Copyright © [Year] Anushka Kundu
-  All rights reserved.
 
-  GitHub: https://github.com/AnushkaKundu
-*/
 
 
