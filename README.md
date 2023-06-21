@@ -9,9 +9,9 @@ Ease at Office is a web app that maintains professionals' information at a offic
 The app uses these technologies:
 
 - React: A JS library for UIs with JSX.
-- HTML and CSS: Markup and styling languages for UIs.
+- CSS: Markup and styling languages for UIs.
 - JavaScript: The programming language for the app's logic and functionality.
-- MongoDB: A NoSQL database for user-specific todo lists.
+- MongoDB: A NoSQL database for maintaining user information and user-specific todo lists.
 
 ## APIs Used
 
