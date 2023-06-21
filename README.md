@@ -26,7 +26,7 @@ Functionalaties:
  - tweet the quote.
 
 ## Weather Feature
- - Shows current temperature, windspeed, humidity and location. 
+ - Shows current temperature, wind speed, humidity and location. 
 
 ## Todo List Functionality
 
@@ -46,19 +46,24 @@ To set up the app, follow these steps:
 
 1. Clone the repo to your local machine:
 ```git clone https://github.com/AnushkaKundu/Ease-at-Office-App.git```
+
 2. Navigate to the project directory:
 ```cd ease-at-office-app```
-3. Install the required dependencies using npm:
+
+4. Install the required dependencies using npm:
 ```npm install```
-4. The app will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
-5. Start the MongoDB server:
-```mongod``` or ```mongosh```
 
-Make sure your MongoDB server is running and accessible.
+5. The app will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
 
-6. Set up the necessary MongoDB connection configurations in the application's backend code. Refer to the backend documentation for more details.
+6. Start the MongoDB server:
+```sudo systemctl start mongodb```
 
-7. Use Node.js to run the backend server:
+7. Make sure your MongoDB server is running and accessible.
+```sudo systemctl status mongodb```
+
+8. Set up the necessary MongoDB connection configurations in the application's backend code. Refer to the backend documentation for more details.
+
+9. Use Node.js to run the backend server:
 ```node index.js```
 
 ## License
