@@ -57,7 +57,8 @@ To set up the app, follow these steps:
 4. Install the required dependencies using npm:
 ```npm install```
 
-5. The app will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
+5. ```npm start```
+The app will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
 
 6. Start the MongoDB server:
 ```sudo systemctl start mongodb```
